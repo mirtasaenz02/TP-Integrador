@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/estilo_Contacto.css">
     <title>Nuestro contacto</title>
-    <link rel="stylesheet" href="../static/css/estilos.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar-index ">
-            <img class="logo-nav" src="./static/imagenes/LogoUNER.PNG" alt="Logo">
-        </nav>
+        <h1>Inmobiliaria: Developer & Asociados</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="institucional.html">Informacion Institucional</a></li>
     </header>
-
-    <div class="logo-centrado">
-        <img src="" alt="">
-    </div>
-    <h1>Dejenos sus datos de contacto</h1><br>
-
+<main>
+    <section>
+        <h2>Brindanos tus datos para contactarte</h2>
+    </section>
+    <section>
     <form id="formulario" action="/do_contacto" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
@@ -41,8 +40,12 @@
         <input type="text" id="email" name="email" required><br>
 
         <button type="submit">Enviar mensaje</button>
-        <a href="index.html">Volver al sitio</a>
     </form>
+    </section>
+</main>
+<footer>
+    <p>Todos los derechos reservados.</p>
+</footer>
 </body>
 
 </html>

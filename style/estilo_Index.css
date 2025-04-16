@@ -1,0 +1,83 @@
+/*ESTILO GENERAL*/
+
+body {
+    font-family: Arial, sans-serif;      
+    margin: 0;                          
+    padding: 0;                          
+    background-color: #000000e8;     
+
+/*ENCABEZADO*/
+header {
+    background-color: #fa2020;           
+    color: rgba(255, 255, 255, 0.925);                       
+    padding: 20px;                       
+    text-align: center;                 
+}
+
+
+header h1 {
+    margin: 0;                           
+}
+
+header ul {
+    list-style: none;
+    padding: 0;                         
+    margin-top: 10px;                   
+    display: flex;                      
+    justify-content: center;           
+}
+
+header li a {
+    color: rgb(255, 217, 3);
+    text-decoration: none;             
+    font-weight: bold;
+    margin-right: 30px;                 
+}
+
+header li a:hover {
+    text-decoration: solid;   
+}
+
+/*PRINCIPAL*/
+
+main {
+    padding: 20px;                      
+}
+
+section h2 {
+    color: #ffffff;                        
+}
+
+section p {
+    color: #000000;
+    text-align: left;                        
+}
+
+institucional section p
+ol {
+    display: grid;                     
+    list-style: none;                 
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 30px;               
+    background-color: #ffffff;        
+    padding: 15px;                     
+    border-radius: 8px;                
+    margin-inline: 10px;
+}
+
+img {
+    border-radius: 8px;                
+    margin-top: 10px;                 
+}
+
+/*FOOTER*/
+footer {
+    background-color: #333;            
+    color: white;                      
+    text-align: center;               
+    padding: 15px;                     
+    margin-top: 40px;                  
+}
