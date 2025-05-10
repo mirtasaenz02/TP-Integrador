@@ -1,0 +1,147 @@
+/* BODY */
+
+/*APLICACION GENERAL DE MARGENES Y PADDING*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* APLICACION A TODO EL CUERPO DE LA PAGINA */
+body { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(163, 114, 147);
+}
+
+/*ENCABEZADO*/
+
+.contenedor-encabezado { /* Con esta clase se da estilo a los elementos que contiene el encabezado, en este caso el H1 y el div */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(255, 10, 255);
+    color:rgb(255, 255, 255);
+    padding: 20px;
+    text-align: left;
+}
+
+/* BARRA DE NAVEGACION */
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Propiedad que separa elementos*/
+}
+
+nav li {
+    background-color: rgb(182, 6, 138);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none; /* Saca el subrayado del link */
+    padding: 10px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: color 0.3s ease; /* Cambia de color en una transicion configurada, 3 segundos */
+}
+
+/* EFECTO ESPECIAL PARA PASAR EL CURSOR SOBRE EL LINK Y QUE CAMBIE AL FORMATO ESTABLECIDO*/
+nav li a:hover {
+    color:rgb(255, 196, 0);
+    
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    padding: 20px;
+}
+
+/* INDEX */
+
+#bienvenida{
+    color: aliceblue;
+    text-align: center;
+    background-color:#333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#catalogo {
+    display: grid;
+    padding: 20px;
+    background-color: rgb(119, 0, 113);
+    border-radius: 8px;
+}
+
+#catalogo ol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+    justify-items: center;
+}
+
+#catalogo li {
+    margin-bottom: 30px;
+    background-color:rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    margin-inline: 10px;
+}
+
+#catalogo img {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* INFORMACION INSTITUCIONAL*/
+
+#nosotros{
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#nosotros h1 {
+    padding: 10px;
+}
+
+#nosotros p {
+    padding: 10px
+}
+
+#servicios {
+    padding: 20px;
+    background-color: darkgray;
+    border-radius: 8px;
+}
+
+#servicios li {
+    padding: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
