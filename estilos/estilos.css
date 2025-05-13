@@ -11,7 +11,7 @@
 body { 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
-    background-color: rgb(163, 114, 147);
+    background-color: rgb(88, 88, 88);
 }
 
 /*ENCABEZADO*/
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: rgb(255, 10, 255);
+    background-color: rgb(207, 2, 207);
     color:rgb(255, 255, 255);
     padding: 20px;
     text-align: left;
@@ -48,13 +48,11 @@ nav li {
     background-color: rgb(182, 6, 138);
     font-weight: bold;
     border-radius: 10px;
-    text-decoration: none; /* Saca el subrayado del link */
     padding: 10px;
-    align-items: center;
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Saca el subrayado del link */
     color:rgb(255, 255, 255);
     transition: color 0.3s ease; /* Cambia de color en una transicion configurada, 3 segundos */
 }
@@ -101,13 +99,16 @@ main {
     margin-bottom: 30px;
     background-color:rgb(255, 255, 255);
     padding: 15px;
-    border-radius: 8px;
     margin-inline: 10px;
 }
 
 #catalogo img {
-    border-radius: 8px;
     margin-top: 10px;
+}
+
+#catalogo img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 /* INFORMACION INSTITUCIONAL*/
@@ -115,7 +116,6 @@ main {
 #nosotros{
     padding: 20px;
     background-color: #333;
-    border-radius: 8px;
     color: aliceblue;
     text-align: center;
 }
@@ -130,12 +130,19 @@ main {
 
 #servicios {
     padding: 20px;
-    background-color: darkgray;
-    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
 }
 
 #servicios li {
     padding: 10px;
+}
+
+
+#catalogo img,
+#catalogo li,
+#nosotros,
+#servicios {
+    border-radius: 8px;
 }
 
 /* FOOTER */
