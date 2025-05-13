@@ -33,7 +33,6 @@ header {
 nav {
     display: flex;
     flex-direction: row-reverse;
-
 }
 
 nav ul {
@@ -136,7 +135,47 @@ main {
 #servicios li {
     padding: 10px;
 }
+/* Footer */
+.footer {
+  background-color: #7c0e57;
+  color: #fff;
+  padding: 20px 0 10px;
+}
 
+.footer-contenido {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-seccion {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-seccion h3 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-seccion a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-seccion a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
 
 #catalogo img,
 #catalogo li,
