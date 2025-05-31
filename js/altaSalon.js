@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () =>{ /** Todo el codigo se ejecutara si primero todo el DOM esta cargado */
 if (!sessionStorage.getItem("usuario")){ /** Si el usuario no existe, no iniciará sesion y nos pedira que nos loguemos */
         alert("Debes logearte")
-        window.location.href = "/js/login.html";
+        window.location.href = "login.html";
         return
 }
 
@@ -10,7 +10,7 @@ const salir = document.getElementById("logout"); /** Se asigna el boton a la con
 if (salir){
     salir.addEventListener("click", () =>{
     sessionStorage.clear();
-    window.location.href = "/js/login.html";
+    window.location.href = "login.html";
     });
 }
 
@@ -25,7 +25,7 @@ form.addEventListener("submit", function(event){
     const descripcion = document.getElementById("descripcion").value;
 
 /** Creamos un objeto Salon con las variables que tomaron los valores ingresados*/
-    const salon = {nombre, direccion, descripcion};
+    const salon = { id: Date.now(),nombre, direccion, descripcion};
     
 /** Preguntamos si existe el objeto salones  y si no creamos un objeto vacio */
     const salones = JSON.parse(localStorage.getItem("salones")) || [];
@@ -41,20 +41,25 @@ form.addEventListener("submit", function(event){
     });
 });
 
+
+
 function mostrarSalones (){
     const tablaBody = document.querySelector("#tablaSalones tbody");
 
     tablaBody.innerHTML = "";
     
     const salones = JSON.parse(localStorage.getItem("salones")) || [];
-    salones.forEach((salon) => {
-        const fila = document.createElement("tr");
-        fila.innerHTML = `
-            <td>${salon.nombre}</td>
-            <td>${salon.direccion}</td>
-            <td>${salon.descripcion}</td>
-        `;
+    salones.forEach((salon, index) => {
+    const fila = document.createElement("tr");
+    fila.innerHTML = `
+        <td>${salon.nombre}</td>
+        <td>${salon.direccion}</td>
+        <td>${salon.descripcion}</td>
+        <td>
+        <button class="btn btn-sm btn-warning me-2" onclick="editarSalon(${index})">Editar</button>
+        <button class="btn btn-sm btn-danger me-2" onclick="eliminarSalon(${index})">Eliminar</button>
+        </td>
+    `;
+    tablaBody.appendChild(fila);
 
-        tablaBody.appendChild(fila);
-        })
-    }
+})}
