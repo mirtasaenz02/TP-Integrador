@@ -1,0 +1,80 @@
+/* ESTILO GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background-color: #030303e8;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #fa2020;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header li a {
+    color: rgb(255, 217, 3);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+header li a:hover {
+    text-decoration: underline; /* Cambié 'solid' que no es válido para text-decoration */
+}
+
+section h2 {
+    color: #ffffff;
+    text-align: left;
+}
+
+section p {
+    color: #ffffff;
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    align-self: center;
+    background-color: #fa2020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* IMÁGENES */
+img {
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
