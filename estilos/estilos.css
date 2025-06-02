@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f1dea9;
@@ -123,6 +124,7 @@ nav ul {
   font-size: 2rem;
   margin-bottom: 15px;
   color: #3a0ca3;
+
 }
 
 .cls-salon-footer p {
@@ -168,6 +170,15 @@ nav ul {
   max-width: 100%;
   height: auto;
 }
+
+
+#catalogo img,
+#catalogo li,
+#nosotros,
+#servicios {
+    border-radius: 8px;
+}
+
 
 /* FOOTER */
 .footer {
