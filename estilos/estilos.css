@@ -1,139 +1,174 @@
-/* BODY */
-
-/*APLICACION GENERAL DE MARGENES Y PADDING*/
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* APLICACION A TODO EL CUERPO DE LA PAGINA */
-body { 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(0, 0, 0);
-    background-color: rgb(88, 88, 88);
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1dea9;
+  color: #222;
 }
 
-/*ENCABEZADO*/
+.bg-burdeos {
+  background-color: #3a0ca3 !important;
+}
 
-.contenedor-encabezado { /* Con esta clase se da estilo a los elementos que contiene el encabezado, en este caso el H1 y el div */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.text-burdeos {
+  color: #d4af37 !important;
 }
 
 header {
-    background-color: rgb(207, 2, 207);
-    color:rgb(255, 255, 255);
-    padding: 20px;
-    text-align: left;
-}
-
-/* BARRA DE NAVEGACION */
-nav {
-    display: flex;
-    flex-direction: row-reverse;
+  background-color: #800020; 
+  color: #fff;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 3px solid #d4af37;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px; /* Propiedad que separa elementos*/
+  list-style: none;
 }
 
-nav li {
-    background-color: rgb(182, 6, 138);
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 10px;
+.nav-hover:hover {
+  background-color: #d4af37 !important;
+  color: #111 !important;
+  transition: background-color 0.3s ease;
 }
 
-nav a {
-    text-decoration: none; /* Saca el subrayado del link */
-    color:rgb(255, 255, 255);
-    transition: color 0.3s ease; /* Cambia de color en una transicion configurada, 3 segundos */
+.banner {
+  background: url('../img/fondo_eventos.jpg') center center/cover no-repeat;
+  height: 80vh;
+  min-height: 500px;
+  position: relative;
 }
 
-/* EFECTO ESPECIAL PARA PASAR EL CURSOR SOBRE EL LINK Y QUE CAMBIE AL FORMATO ESTABLECIDO*/
-nav li a:hover {
-    color:rgb(255, 196, 0);
-    
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.6);
+  z-index: 1;
 }
 
-/* CONTENIDO PRINCIPAL */
-
-main {
-    padding: 20px;
+.banner-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-/* INDEX */
-
-#bienvenida{
-    color: aliceblue;
-    text-align: center;
-    background-color:#333;
-    padding: 10px;
-    border-radius: 8px;
+.banner-text h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
-#catalogo {
-    display: grid;
-    padding: 20px;
-    background-color: rgb(119, 0, 113);
-    border-radius: 8px;
+.banner-text p {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-#catalogo ol {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    list-style: none;
-    padding: 0px;
-    justify-items: center;
+/* Botón */
+.btn-outline-light {
+  border-color: #d4af37;
+  color: #d4af37;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#catalogo li {
-    margin-bottom: 30px;
-    background-color:rgb(255, 255, 255);
-    padding: 15px;
-    margin-inline: 10px;
+.btn-outline-light:hover {
+  background-color: #d4af37;
+  color: #111;
 }
 
-#catalogo img {
-    margin-top: 10px;
+#bienvenida h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
 }
 
-#catalogo img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+#bienvenida p {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  color: #796f68;
 }
 
-/* INFORMACION INSTITUCIONAL*/
-
-#nosotros{
-    padding: 20px;
-    background-color: #333;
-    color: aliceblue;
-    text-align: center;
+.cls-salon {
+  background-color: #fffbe6;
+  border-left: 4px solid #d4af37;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
-#nosotros h1 {
-    padding: 10px;
+.cls-salon:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
 }
 
-#nosotros p {
-    padding: 10px
+.cls-salon-footer {
+  padding: 30px 40px;
+  font-family: 'EB Garamond', serif;
+  color: #333;
 }
 
-#servicios {
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
+.cls-salon-footer h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #3a0ca3;
+
 }
 
-#servicios li {
-    padding: 10px;
+.cls-salon-footer p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.reservar {
+  margin-top: 20px;
+  background-color: #3a0ca3;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.reservar:hover {
+  background-color: #d4af37;
+  color: #111;
+}
+
+/* Imagen del salón */
+.image-container {
+  flex: 0 0 45%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -147,42 +182,158 @@ main {
 
 /* FOOTER */
 .footer {
-    background-color: #000000;
-    color: #fff;
-    padding: 20px 0 10px;
+  background-color: #1a1a1a;
+  color: #d4af37;
+  padding: 40px 0 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 .footer-contenido {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer-seccion {
-    margin: 10px;
-    min-width: 200px;
+  margin: 15px;
+  min-width: 220px;
 }
 
 .footer-seccion h3 {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 8px;
+  color: #d4af37;
 }
 
 .footer-seccion a {
-    color: #fff;
-    text-decoration: none;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .footer-seccion a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    border-top: 1px solid #fff;
-    padding-top: 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.95em;
+  border-top: 1px solid #d4af37;
+  padding-top: 15px;
+}
+
+.banner-contacto {
+  background: url('../img/fondo_eventos.jpg') center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-contacto::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.contacto-tarjeta {
+  position: relative;
+  z-index: 2;
+  background-color: #fffbe6;
+  border-left: 4px solid #d4af37;
+  font-family: 'EB Garamond', serif;
+  color: #333;
+  max-width: 600px;
+  width: 90%;
+}
+
+.contacto-tarjeta a {
+  color: #3a0ca3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contacto-tarjeta a:hover {
+  text-decoration: underline;
+  color: #d4af37;
+}
+
+/* Contenedor de la tarjeta nosotros */
+.banner-nosotros {
+  margin-top: 0;
+  min-height: calc(100vh - 70px);
+  background: url('../img/fondo_eventos.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.banner-nosotros::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.nosotros-tarjeta {
+  background-color: #fffbe6; 
+  border-left: 4px solid #d4af37;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  max-width: 900px;
+  width: 100%;
+  color: #333;
+  font-family: 'EB Garamond', serif;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+  position: relative;
+  margin-top: 80px; 
+}
+
+.nosotros-tarjeta ul p {
+  margin: 0;
+}
+
+.nosotros-tarjeta h4 {
+  font-family: 'EB Garamond', serif;
+}
+
+input, textarea, select {
+  border: 1px solid #ccc !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.text-secondary-descSalon {
+  text-align: left;
+  width: 100%;
+  padding-left: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cls-salon {
+    flex-direction: column;
+  }
+  .image-container {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .cls-salon-footer {
+    padding: 20px;
+  }
+  .banner {
+    height: 60vh;
+  }
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
 }

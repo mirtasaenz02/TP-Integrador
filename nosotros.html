@@ -1,97 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="estilos/estilos.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <title>Nosotros</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros | Develops Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
   </head>
 
   <body class="bg-secondary">
 
-    <!--BARRA DE NAVEGACION-->
-    <header class="bg-primary text-dark">
-      <div class="contenedor-encabezado">
-        <h1 class="text-uppercase fw-bold">Develops Eventos</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>        
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                <a class="nav-link text-white" href="/index.html">Home</a>
-                </li>
+    <!-- Encabezado -->
+    <header class="bg-burdeos text-light py-3 px-4 d-flex justify-content-between align-items-center">
+        <h1 class="fw-bold mb-0" style="font-family: 'EB Garamond', serif;">Develops Eventos</h1>
+        <nav>
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+                <li><a href="./index.html" class="nav-link px-3 py-2 rounded text-light nav-hover">Volver</a></li>
             </ul>
-            </div>            
-          </div>
         </nav>
-      </div>
     </header>
-    
-    <!--CONTENIDO PRINCIPAL-->
-    <main class="container mt-4 bg-info p-4 rounded">
-      <section id="nosotros">
-        <h1>NOSOTROS</h1>
-        <p>Develops Eventos es una empresa líder en el rubro de organización y logística de eventos, con sede en Ciudad Autónoma de Buenos Aires (CABA).<br>
-        Nos especializamos en el alquiler de salones exclusivos y la provisión integral de servicios para eventos corporativos, sociales y culturales.<br>
-        Desde nuestra fundación, nos hemos comprometido con la excelencia, ofreciendo soluciones personalizadas, innovadoras y con un enfoque 360° para garantizar que cada evento sea una experiencia única e inolvidable.<br>
+
+    <!-- Banner -->
+    <section class="banner-nosotros d-flex align-items-center justify-content-center">
+      <div class="nosotros-tarjeta p-5 rounded shadow-lg text-center text-md-start">
+        <h1 class="text-uppercase fw-bold mb-4" style="color: #3a0ca3;">Nosotros</h1>
+        <p class="mb-4">
+          <strong>Develops Eventos</strong> es una empresa líder en el rubro de organización y logística de eventos, con sede en Ciudad Autónoma de Buenos Aires (CABA).<br>
+          Nos especializamos en el alquiler de salones exclusivos y la provisión integral de servicios para eventos corporativos, sociales y culturales.<br>
+          Desde nuestra fundación, nos hemos comprometido con la excelencia, ofreciendo soluciones personalizadas, innovadoras y con un enfoque 360° para garantizar que cada evento sea una experiencia única e inolvidable.
         </p>
-      </section>
-      <section id="servicios">
-        <h4>Nuestros Servicios</h4>
-        <ul>
-          <li> 
-            <strong>Alquiler de Salones Premium</strong>
-            <p>Contamos con una amplia variedad de espacios versátiles, modernos y elegantes ubicados estratégicamente en CABA, adaptables a distintos tipos y tamaños de eventos.</p>
+
+        <h4 class="text-uppercase fw-bold mt-5 mb-3" style="color: #3a0ca3;">Nuestros Servicios</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>Alquiler de Salones Premium:</strong>
+            <p>Espacios versátiles, modernos y elegantes ubicados estratégicamente en CABA, adaptables a todo tipo de eventos.</p>
           </li>
-          <li> 
-            <strong>Organización Integral de Eventos</strong>
-            <p>Nos encargamos de todo: desde la planificación y ambientación, hasta la coordinación en tiempo real del evento.</p>
+          <li class="mb-3">
+            <strong>Organización Integral:</strong>
+            <p>Planificación, ambientación y coordinación completa del evento.</p>
           </li>
-          <li> 
-            <strong>Catering de Alta Calidad</strong>
-            <p>Ofrecemos opciones gastronómicas personalizadas, desde menús clásicos hasta propuestas gourmet, con alternativas vegetarianas, veganas y sin TACC.</p>
+          <li class="mb-3">
+            <strong>Catering de Alta Calidad:</strong>
+            <p>Menús personalizados: clásicos, gourmet, vegetarianos, veganos y sin TACC.</p>
           </li>
-          <li> 
-            <strong>Tecnología y Equipamiento</strong>
-            <p>Disponemos de sonido profesional, iluminación inteligente, pantallas LED, proyección multimedia y más.</p>
+          <li class="mb-3">
+            <strong>Tecnología y Equipamiento:</strong>
+            <p>Sonido profesional, iluminación inteligente, pantallas LED, y más.</p>
           </li>
-          <li> 
-            <strong>Staff Profesional</strong>
-            <p>Contamos con un equipo capacitado y cordial: coordinadores, mozos, bartenders, DJs, técnicos y personal de seguridad.</p>
+          <li>
+            <strong>Staff Profesional:</strong>
+            <p>Coordinadores, mozos, bartenders, DJs, técnicos y personal de seguridad.</p>
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!--FOOTER-->
+    <!-- Pié de página -->
     <footer class="footer">
-        <div class="footer-contenido">
-          <div class="footer-seccion">
-              <h3>Contacto</h3>
-              <p>Tel: (011) 1234-5678</p>
-              <p>Email: info@Developseventos.com</p>
-              <p>Dirección: Av. Siempre Viva 123, Buenos Aires</p>
-          </div>
-          <div class="footer-seccion">
-              <h3>Horario</h3>
-              <p>Lunes a Viernes: 9:00 - 18:00</p>
-              <p>Sábados: 10:00 - 14:00</p>
-          </div>
-          <div class="footer-seccion">
-              <h3>Redes Sociales</h3>
-              <p><a href="#">Facebook</a></p>
-              <p><a href="#">Instagram</a></p>
-          </div>
-          </div>
-          <div class="footer-bottom">
-              <p>&copy; 2025 Develops Eventos. Todos los derechos reservados.</p>
-          </div>
+      <div class="footer-contenido">
+        <div class="footer-seccion">
+          <h3>Contacto</h3>
+          <p>Tel: (011) 1234-5678</p>
+          <p>Email: info@Developseventos.com</p>
+          <p>Dirección: Av. Siempre Viva 123, Buenos Aires</p>
+        </div>
+        <div class="footer-seccion">
+          <h3>Horario</h3>
+          <p>Lunes a Viernes: 9:00 - 18:00</p>
+          <p>Sábados: 10:00 - 14:00</p>
+        </div>
+        <div class="footer-seccion">
+          <h3>Redes Sociales</h3>
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Instagram</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Develops Eventos. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
