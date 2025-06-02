@@ -2,6 +2,17 @@
 
 export const SALONES_KEY = 'salones_eventos';
 
+const salonesIniciales = [
+  { id: '1', nombre: 'Salón Colonial', 
+      descripcion: 'Un espacio elegante, con detalles de madera y grandes ventanales. Ideal para eventos sofisticados en un ambiente clásico y cálido.', 
+      capacidad: 50, 
+      direccion: 'Av. del Libertador 1250 - CABA' },
+  { id: '2', nombre: 'Salón Embajador', 
+      descripcion: 'De elegante diseño contemporáneo, sus detalles refinados y una atmósfera de distinción hacen el perfecto escanario para eventos de alto nivel.', 
+      capacidad: 100, 
+      direccion: 'San Martín 234 - CABA' },
+];
+
 export function inicializarLocalStorage() {
   if (!localStorage.getItem(SALONES_KEY)) {
     localStorage.setItem(SALONES_KEY, JSON.stringify(salonesIniciales));
@@ -18,7 +29,8 @@ export function guardarSalones(salones) {
 
 export function agregarSalon(salon) {
   const salones = obtenerSalones();
-  salon.id = crypto.randomUUID();
+  salon.id = salon.id || crypto.randomUUID();
+
   salones.push(salon);
   guardarSalones(salones);
 }
